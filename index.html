@@ -1126,13 +1126,33 @@
         </div>
         <div id="npc-list" class="list-container" style="padding: 0;"> </div>
       </div>
-      <div id="chat-list-bottom-nav">
-        <div class="nav-item active" data-view="messages-view"> <span data-lang-key="navMessages">消息</span> </div>
-        <div class="nav-item" data-view="qzone-screen"> <span data-lang-key="navQzone">动态</span> </div>
-        <div class="nav-item" data-view="memories-view"> <span data-lang-key="navMemories">回忆</span> </div>
-        <div class="nav-item" data-view="favorites-view"> <span data-lang-key="navFavorites">收藏</span> </div>
-        <div class="nav-item" data-view="npc-list-view"> <span data-lang-key="navNpcList">NPC</span> </div>
-      </div>
+     <!-- 底部导航栏 -->
+            <div id="chat-list-bottom-nav">
+                <!-- 1. 消息 -->
+                <div class="nav-item active" data-view="messages-view">
+                    <span>微信</span>
+                </div>
+
+                <!-- 2. NPC -->
+                <div class="nav-item" data-view="npc-list-view">
+                    <span>通讯录</span>
+                </div>
+
+                <!-- 中间悬浮：回忆 (透明) -->
+                <div class="nav-item" data-view="memories-view">
+                    <span>回忆</span>
+                </div>
+
+                <!-- 3. 动态 -->
+                <div class="nav-item" data-view="qzone-screen">
+                    <span>发现</span>
+                </div>
+
+                <!-- 4. 收藏 -->
+                <div class="nav-item" data-view="favorites-view">
+                    <span>我</span>
+                </div>
+            </div>
     </div>
     <div id="album-screen" class="screen">
       <div class="header"> <span class="back-btn" id="album-back-btn">‹</span> <span>我的相册</span> <span class="action-btn" id="create-album-btn-page">+</span> </div>
